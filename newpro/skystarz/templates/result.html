@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('/static/img/catswhite.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+        }
+
+        .table-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <h2>Your Data</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <td id="displayName">{{name}}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td id="displayEmail">{{email}}</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td id="displayPassword" >{{password}}</td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td id="displayMessage">{{message}}</td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>
